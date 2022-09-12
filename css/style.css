@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+}
+
+.headerBack{
+    height: 100vh;
+    background: url(/media/fondo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulo{
+    font-size: 50px;
+}
+
+.navBar{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.links{
+    width: 20vw;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.btn{
+    border: none;
+    background: none;
+    font-size: 15px;
+}
+
+.tituloConteiner{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo{
+    text-align: center;
+
+}
+
+.btnEmpieza{
+    text-align: center;
+    text-decoration: none;
+    width: 8vw;
+    position: absolute;
+    bottom: 0px;
+    left: 45%;
+    z-index: 3;
+    padding: 10px 0;
+    border: none;
+    border-radius: 125px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #FF2965;
+    font-size: 20px;
+    color: white;
+}
+
+.sectionBack1{
+    height: 100vh;
+    background: url(/media/fondo2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section1Container{
+    height: 60%;
+    padding: 10% 20%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.infoContainer{
+    grid-column: 1/3;
+}
+
+.title{
+    font-size: 3rem;
+    margin: 2rem 0;
+}
+
+.info{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 1.5rem;
+}
+
+.lista{
+    margin-left: 3rem;
+}
+
+.imgContainer{
+    border-radius: 50px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sillaImg{
+    margin: auto 0;
+    border-radius: 2rem;
+}
+
+.btnUp{
+    text-align: center;
+    text-decoration: none;
+    width: 8vw;
+    position: absolute;
+    left: 45%;
+    z-index: 3;
+    padding: 10px 0;
+    border: none;
+    border-radius: 125px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color: #FF2965;
+    font-size: 20px;
+    color: white;
+}
+
+.btnDown{
+    text-align: center;
+    text-decoration: none;
+    width: 8vw;
+    position: absolute;
+    bottom: -100vh;
+    left: 45%;
+    z-index: 3;
+    padding: 10px 0;
+    border: none;
+    border-radius: 125px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #FF2965;
+    font-size: 20px;
+    color: white;
+}
+
+/*Seccion2*/
+
+.sectionBack2{
+    height: 100vh;
+    background: url(/media/fondo3.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section2Container{
+    height: 60%;
+    padding: 10% 20%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.infoContainer2{
+    grid-column: 1/3;
+}
+.carrusel{
+    grid-column: 3/5;
+    margin: auto 5rem;
+}
+/*Seccion3*/
+
+.sectionBack3{
+    height: 100vh;
+    background: url(/media/fondo4.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section3Container{
+    height: 90%;
+    padding: 10% 20%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 30px;
+}
+
+.titleResenas{
+    grid-column: 1/4;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+.tituloResenas{
+    font-size: 3rem;
+}
+
+.classCarruselResenas{
+    grid-column: 1/4;
+}
+
+.card{
+    height: 15rem;
+    max-width: 15rem;
+    background-color: white;
+    border: solid 1px black;
+    border-radius: 1rem;
+    margin: auto 2rem;
+}
+
+.card-title{
+    border-bottom: solid 1px black;
+    border-radius: 1rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: #eeeeee;
+    padding-top: 0.5rem;
+}
+
+.userImg{
+    margin: 0 auto;
+}
+
+.userName{
+    text-align: center;
+}
+
+.calificacion{
+    display: flex;
+    justify-content: center;
+}
+
+.review{
+    margin: 0 1rem;
+}
+
+/*seccion4*/
+
+.ingresaALaApp{
+    text-decoration: none;
+    color: black;
+    border: solid 2px black;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    background-color: #eeeeee;
+}
+
+.ingresaALaApp:hover{
+    color: black;
+}
+
+.sectionBack4{
+    height: 100vh;
+    background: url(/media/fondo5.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.appBtn{
+    background-color: #eeeeee;
+    padding: 1rem 2rem;
+    border: solid 3px black;
+    border-radius: 2rem;
+    color: black;
+}
+
+/*OffCanvas*/
+
+.offCanvasInput{
+    height: 2rem;
+    width: 20rem;
+    font-size: 1rem;
+}
+
+.headerAppBack{
+    height: 100vh;
+    background: url(/media/fondoApp.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*--------------app.html----------------*/
+
+.appMain{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.LogInTitle{
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.LogInText{
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+}
+
+.btnLogIn{
+    width: 100%;
+    align-items: center;
+    background: none;
+    border: none;
+    border-bottom: solid 1px white;
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 2rem;
+}
+
+.controller{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btnController{
+    background: none;
+    border: none;
+}
+
+.gridController{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.btnControllerUp{
+    grid-column: 1/4;
+    margin: 0 auto;
+}
+
+.btnControllerLeft{
+    grid-column: 1/3;
+    display: flex;
+    justify-content: flex-start;
+}
