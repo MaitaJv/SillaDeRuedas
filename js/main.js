@@ -17,28 +17,28 @@ let resenas = [
     nombre: "Lautaro Zambella",
     id: 2,
     calificacion: 5,
-    review: "Que proyecto de mierda",
+    review: "es muy practico para gente que trabaja en casa",
     foto: "user.png"
   },
   {
     nombre: "Santiago Garcia",
     id: 3,
     calificacion: 0,
-    review: "Donde esta la silla? yo solo veo un robotito",
+    review: "Me parece bastate copado",
     foto: "user.png"
   },
   {
     nombre: "Francisco Sosa",
     id: 4,
     calificacion: 4,
-    review: "Menuda silla",
+    review: "Un proyecto interesante",
     foto: "user.png"
   },
   {
     nombre: "Javier Maita",
     id: 5,
     calificacion: 5,
-    review: "Que proyecto de mierda",
+    review: "Proyecto innovador",
     foto: "user.png"
   }
 ]
