@@ -17,7 +17,7 @@ let resenas = [
     nombre: "Lautaro Zambella",
     id: 2,
     calificacion: 5,
-    review: "Que poryecto de mierda",
+    review: "Que proyecto de mierda",
     foto: "user.png"
   },
   {
@@ -38,7 +38,7 @@ let resenas = [
     nombre: "Javier Maita",
     id: 5,
     calificacion: 5,
-    review: "Que poryecto de mierda",
+    review: "Que proyecto de mierda",
     foto: "user.png"
   }
 ]
