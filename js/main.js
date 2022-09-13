@@ -59,13 +59,13 @@ resenas.forEach( element => {
   resena.innerHTML +=`
                         <div class="card">
                           <div class="card-title">
-                            <img src="/media/icons/${foto}" height="75px" class="userImg" alt="user">
+                            <img src="media/icons/${foto}" height="75px" class="userImg" alt="user">
                             <h5 class="userName">${name}</h5>
                           </div>
                           <div class="card-info">
                             <div class="calificacion">
                               <h5>${calif}</h5>
-                              <img src="/media/icons/star.png" height="16px" alt="estrellas">
+                              <img src="media/icons/star.png" height="16px" alt="estrellas">
                             </div>
                             <p class="review">${rev}</p>
                           </div>

@@ -29,33 +29,33 @@ function app() {
                         <div class="controller">
                             <div class="gridController">
                                 <button class="btnController btnControllerUp" id="btnUp">
-                                    <img src="/media/icons/flechaAR.png" height="75px" alt="Izquierda">
+                                    <img src="../media/icons/flechaAR.png" height="75px" alt="Izquierda">
                                 </button>
                                 <button class="btnController btnControllerLeft" id="btnLeft">
-                                    <img src="/media/icons/flechaIZ.png" height="75px" alt="Izquierda">
+                                    <img src="../media/icons/flechaIZ.png" height="75px" alt="Izquierda">
                                 </button>
                                 <button class="btnController btnControllerRight" id="btnRight">
-                                    <img src="/media/icons/flechaDER.png" height="75px" alt="Izquierda">
+                                    <img src="../media/icons/flechaDER.png" height="75px" alt="Izquierda">
                                 </button>
                             </div>
                             <div class="gridController">
                                 <button class="btnController" id="btnLeft">
-                                    <img src="/media/app/bano-publico.png" height="75px" alt="Izquierda">
+                                    <img src="../media/app/bano-publico.png" height="75px" alt="Izquierda">
                                 </button>
                                 <button class="btnController" id="btnUp">
-                                    <img src="/media/app/cocina.png" height="75px" alt="Izquierda">
+                                    <img src="../media/app/cocina.png" height="75px" alt="Izquierda">
                                 </button>
                                 <button class="btnController" id="btnRight">
-                                    <img src="/media/app/habitacion.png" height="75px" alt="Izquierda">
+                                    <img src="../media/app/habitacion.png" height="75px" alt="Izquierda">
                                 </button>
                                 <button class="btnController" id="btnLeft">
-                                    <img src="/media/app/jardin.png" height="75px" alt="Izquierda">
+                                    <img src="../media/app/jardin.png" height="75px" alt="Izquierda">
                                 </button>
                                 <button class="btnController" id="btnUp">
-                                    <img src="/media/app/mesa-de-comedor.png" height="75px" alt="Izquierda">
+                                    <img src="../media/app/mesa-de-comedor.png" height="75px" alt="Izquierda">
                                 </button>
                                 <button class="btnController" id="btnRight">
-                                    <img src="/media/app/puerta.png" height="75px" alt="Izquierda">
+                                    <img src="../media/app/puerta.png" height="75px" alt="Izquierda">
                                 </button>
                             </div>
                         </div>

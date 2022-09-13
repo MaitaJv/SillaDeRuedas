@@ -9,7 +9,7 @@ html{
 
 .headerBack{
     height: 100vh;
-    background: url(/media/fondo.svg);
+    background: url(../media/fondo.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -77,7 +77,7 @@ html{
 
 .sectionBack1{
     height: 100vh;
-    background: url(/media/fondo2.svg);
+    background: url(../media/fondo2.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -162,7 +162,7 @@ html{
 
 .sectionBack2{
     height: 100vh;
-    background: url(/media/fondo3.svg);
+    background: url(../media/fondo3.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -186,7 +186,7 @@ html{
 
 .sectionBack3{
     height: 100vh;
-    background: url(/media/fondo4.svg);
+    background: url(../media/fondo4.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -267,7 +267,7 @@ html{
 
 .sectionBack4{
     height: 100vh;
-    background: url(/media/fondo5.svg);
+    background: url(../media/fondo5.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -290,7 +290,7 @@ html{
 
 .headerAppBack{
     height: 100vh;
-    background: url(/media/fondoApp.svg);
+    background: url(../media/fondoApp.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
