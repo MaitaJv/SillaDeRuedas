@@ -57,19 +57,24 @@ resenas.forEach( element => {
   } = element
 
   resena.innerHTML +=`
-                        <div class="card">
-                          <div class="card-title">
-                            <img src="media/icons/${foto}" height="75px" class="userImg" alt="user">
-                            <h5 class="userName">${name}</h5>
-                          </div>
-                          <div class="card-info">
-                            <div class="calificacion">
-                              <h5>${calif}</h5>
-                              <img src="media/icons/star.png" height="16px" alt="estrellas">
-                            </div>
-                            <p class="review">${rev}</p>
-                          </div>
-                        </div>
+  <div>
+    <div class="cardContainer" >
+      <div class="card">
+        <div class="card-title">
+          <img src="media/icons/${foto}" class="userImg" alt="user">
+          <h5 class="userName">${name}</h5>
+        </div>
+        <div class="card-info">
+          <div class="calificacion">
+            <h5>${calif}</h5>
+            <img src="media/icons/star.png" height="15px" alt="estrellas">
+          </div>
+          <p class="review">${rev}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+                        
 `
 
 resenasContainer.appendChild(resena);
@@ -90,16 +95,16 @@ $(document).ready(function(){
 
 $('#carruselResenas').slick({
   centerMode: true,
-  centerPadding: '20px',
+  centerPadding: '0px',
   slidesToShow: 3,
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 949,
       settings: {
         arrows: false,
         centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
+        centerPadding: '30px',
+        slidesToShow: 1
       }
     },
     {
