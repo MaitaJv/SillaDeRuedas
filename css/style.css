@@ -2,23 +2,22 @@
     margin: 0;
     padding: 0;
 }
+
 html{
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-size: 16px;
 }
 
 .headerBack{
     height: 100vh;
-    background: url(../media/fondo.svg);
+    background: url(../media/fondoPrueba2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.titulo{
-    font-size: 50px;
+    background-position: 100% 40%;
 }
 
 .navBar{
+    background-color: white;
     position: fixed;
     top: 0;
     width: 100vw;
@@ -28,11 +27,20 @@ html{
     z-index: 3;
 }
 
+.flexCenter{
+    width: 100%;
+    display: flex !important; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .links{
-    width: 20vw;
+    width: 30vw;
     display: flex;
     justify-content: space-between;
     list-style: none;
+    margin-bottom: 0;
 }
 
 .link{
@@ -54,8 +62,10 @@ html{
 }
 
 .titulo{
+    font-family: 'Playfair Display', serif;
     text-align: center;
-
+    font-size: 8rem;
+    color: black;
 }
 
 .btnEmpieza{
@@ -78,21 +88,29 @@ html{
 
 .sectionBack1{
     height: 100vh;
-    background: url(../media/fondo2.svg);
+    background: url(../media/fondoPrueba.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 .section1Container{
-    height: 60%;
-    padding: 10% 20%;
+    height: 100vh;
+    padding: 10%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
 }
 
+.flex-End{
+    display: flex;
+    justify-content: flex-end;
+}
+
 .infoContainer{
-    grid-column: 1/3;
+    grid-column: 2/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .title{
@@ -106,6 +124,11 @@ html{
     flex-direction: column;
     justify-content: space-around;
     font-size: 1.5rem;
+    margin-right: 2rem;
+}
+
+.imgEChair{
+    height: 250px;
 }
 
 .lista{
@@ -117,14 +140,17 @@ html{
 }
 
 .imgContainer{
+    grid-column: 1/3;
     border-radius: 50px ;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .sillaImg{
     height: 400px;
+    width: 400px;
     margin: auto 0;
     border-radius: 2rem;
 }
@@ -301,14 +327,35 @@ html{
 /*OffCanvas*/
 
 .offCanvasInput{
-    height: 2rem;
+    height: 0.5rem;
     width: 20rem;
+    font-size: 1rem;
+    background: transparent;
+    border-radius: 0.5rem;
+    border: none;
+    border-bottom: solid 1px black;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    transition: all 0.5s;
+    
+}
+
+.offCanvasInput::placeholder {
+    font-size: 0;
+}
+
+.offCanvasInput:focus{
+    height: 2rem;
+    border-top: none;
+}
+
+.offCanvasInput:focus::placeholder{
     font-size: 1rem;
 }
 
 .headerAppBack{
     height: 100vh;
-    background: url(../media/fondoApp.svg);
+    background: url(../media/app/fondoInicioSesion.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -324,17 +371,30 @@ html{
     align-items: center;
 }
 
+.LogInContainer{
+    height: 500px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .LogInTitle{
     text-align: center;
-    font-size: 3rem;
-    color: white;
+    font-size: 2rem;
+    color: black;
     margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .LogInText{
     text-align: center;
     font-size: 1rem;
-    color: white;
+    color: black;
+    margin-top: 1rem;
 }
 
 .btnLogIn{
@@ -342,10 +402,37 @@ html{
     align-items: center;
     background: none;
     border: none;
-    border-bottom: solid 1px white;
+    border-bottom: solid 1px black;
     font-size: 1.5rem;
-    color: white;
-    margin-top: 2rem;
+    color: black;
+    margin: 2rem 0;
+}
+
+.ChairsContainer{
+    height: 500px;
+    width: 800px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textCenter{
+    text-align: center;
+}
+
+.Chair{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+}
+
+.Chairs{
+    width: 80%;
+    text-align: center;
 }
 
 .controller{
@@ -374,6 +461,60 @@ html{
     grid-column: 1/3;
     display: flex;
     justify-content: flex-start;
+}
+
+.footer{
+    background-color: #212121;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: ghostwhite;
+}
+
+.footerTop{
+    display: grid;
+    grid-template-columns: repeat(3, 25vw);
+}
+
+.textA{
+    text-align: center;
+}
+
+.footerLogo{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footerEscudo{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.imgCenter {
+    display: flex;
+    justify-content: center;
+}
+
+.footerMid{
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 25vw);
+}
+
+.members{
+    display: flex;
+    justify-content: space-around;
+}
+
+.listaStyle{
+    list-style: none;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
 }
 
 @media (min-width:950px) and (max-width:1300px) {

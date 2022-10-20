@@ -5,15 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Silla de ruedas</title>
+    <link rel="icon" type="image/x-icon" href="media/wheelchair.png">
     <!--Fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!--Slick-->
     <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -22,13 +28,13 @@
         <nav class="navBar">
             <img src="media/wheelchair.png" height="50px" alt="Logo">
             <ul class="links">
-                <li><a class="link" href="index.html">Conocenos</a></li>
-                <li><a class="link" href="pgs/app.html">App</a></li>
-                <li><a class=" link btn" href="pgs/app.html">Iniciar Sesión</a></li>
+                <li class="flexCenter"><a class="link" href="index.html">Conocenos</a></li>
+                <li class="flexCenter"><a class="link" href="pgs/app.html">App</a></li>
+                <li class="flexCenter"><a class=" link btn" href="pgs/app.html">Iniciar Sesión</a></li>
             </ul>
         </nav>
-        <div class="tituloConteiner">
-            <h1 class="titulo">Silla De Ruedas</h1>
+        <div class="tituloConteiner" data-aos="fade-up">
+            <h1 class="titulo">E-Chair</h1>
         </div>
         <div>
             <a class="btnEmpieza" href="#seccion1">Empieza</a>
@@ -39,22 +45,32 @@
             <div>
                 <a class="btnUp" href="#header"><img class="scrollBtn" src="media/icons/dot-arrow-up.png" alt="Bajar"></a>
             </div>
-            <div class="section1Container">
-                <div class="infoContainer">
-                    <div class="title">
-                        <h3>La Silla</h3>
+            <div class="flex-End">
+                <div class="section1Container" data-aos="fade-up"
+                data-aos-duration="2000">
+                    <div class="infoContainer">
+                        <div class="title">
+                            <h3>E-Chair</h3>
+                        </div>
+                        <div class="info">
+                            <p>E-Chair presenta una mayor facilidad que las silla de ruedas convencionales.</p>
+                            <h5>Contaras</h5>
+                            <div class="carrusel" id="carruselTecnologias">
+                                <div class="flexCenter">
+                                    <h5>Movimiento por Stick</h5>
+                                    <img class="imgEChair" src="/media/icons/game-controller.png" alt="arcade">
+                                </div>
+                                <div class="flexCenter">
+                                    <h5>Selector de destino fisico</h5>
+                                    <img class="imgEChair" src="/media/icons/game-controller.png" alt="arcade">
+                                </div>
+                                <div class="flexCenter">
+                                    <h5>Selector de destino digital</h5>
+                                    <img class="imgEChair" src="/media/icons/home-automation.png" alt="Movil">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="info">
-                        <p>Nuestro producto presenta una mayor facilidad que las silla de ruedas convencionales.</p>
-                        <ul class="lista">
-                            <li>Movimiento por stick</li>
-                            <li>Selector de destino fisico</li>
-                            <li>Selector de destino Digital</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="imgContainer">
-                    <img src="media/sillaDibujo.jpg" class="sillaImg" alt="foto">
                 </div>
             </div>
             <div>
@@ -77,8 +93,8 @@
                     </ul>
                 </div>
                 <div class="carrusel" id="carruselTecnologias">
-                    <div><img src="media/icons/js.png" class="imgCarrusel" alt="1"></div>
-                    <div><img src="media/icons/c-.png" class="imgCarrusel" alt="2"></div>
+                    <div><img src="media/icons/js.png" class="imgCarrusel" alt="1"/></div>
+                    <div><img src="media/icons/c-.png" class="imgCarrusel" alt="2"/></div>
                 </div>
             </div>
             <div>
@@ -118,8 +134,61 @@
             </div>
         </section>
     </main>
-    <footer>
-
+    <footer class="footer">
+        <div class="footerTop">
+            <div class="footerLogo">
+                <img src="media/wheelchair.png" height="100px" alt="Logo">
+            </div>
+            <div class="textA">
+                <h4>Contactanos</h4>
+            </div>
+            <div class="footerEscudo">
+                <img src="media/escudo.png" height="100px" alt="">
+            </div>
+        </div>
+        <div class="footerMid">
+            <div>
+                <div class="members">
+                    <div>
+                        <h5>Participates</h5>
+                        <ul>
+                            <li class="listaStyle">Javier Maita</li>
+                            <li class="listaStyle">Juan Pablo Martinez Bdar</li>
+                            <li class="listaStyle">Francisco Sosa</li>
+                            <li class="listaStyle">Lautaro Zambella</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5>Profesores</h5>
+                        <ul>
+                            <li class="listaStyle">Agustin Reyes</li>
+                            <li class="listaStyle">Sebastian Kennedy</li>
+                        </ul>
+                    </div>
+                </div>
+                <p>Nuestros Datos</p>
+            </div>
+            <div class="textA">
+                <p>Escribenos</p>
+                <p>javiermaita@hotmail.com.ar</p>
+            </div>
+            <div class="redes">
+                <div>
+                    <h5>Redes</h5>
+                    <ul>
+                        <li class="listaStyle">Instagram</li>
+                        <li class="listaStyle">Twitter</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <ul class="links">
+                <li><a class="link" href="index.html">Conocenos</a></li>
+                <li><a class="link" href="pgs/app.html">App</a></li>
+                <li><a class=" link btn" href="pgs/app.html">Iniciar Sesión</a></li>
+            </ul>
+        </div>
     </footer>
 
     <!--Bootstrap-->
@@ -131,6 +200,10 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick-1.8.1/slick/slick.js"></script>
+
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({duration: 1000});</script>
 
     <!--JS-->
     <script src="js/main.js"></script>
