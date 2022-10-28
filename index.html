@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!--Slick-->
@@ -57,48 +58,69 @@
                             <h5>Contaras</h5>
                             <div class="carrusel" id="carruselTecnologias">
                                 <div class="flexCenter">
-                                    <h5>Movimiento por Stick</h5>
-                                    <img class="imgEChair" src="/media/icons/game-controller.png" alt="arcade">
-                                </div>
-                                <div class="flexCenter">
                                     <h5>Selector de destino fisico</h5>
-                                    <img class="imgEChair" src="/media/icons/game-controller.png" alt="arcade">
+                                    <img class="imgEChair" src="media/icons/game-controller.png" alt="arcade">
                                 </div>
                                 <div class="flexCenter">
                                     <h5>Selector de destino digital</h5>
-                                    <img class="imgEChair" src="/media/icons/home-automation.png" alt="Movil">
+                                    <img class="imgEChair" src="media/icons/home-automation.png" alt="Movil">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div>
-                <a class="btnDown" href="#seccion2"><img class="scrollBtn" src="media/icons/dot-arrow-down.png" class="downArrow" alt="Bajar"></a>
-            </div>
         </section>
         <section class="sectionBack2" id="seccion2">
             <div>
                 <a class="btnUp" href="#seccion1"><img class="scrollBtn" src="media/icons/dot-arrow-up.png" alt="Bajar"></a>
             </div>
-            <div class="section2Container">
-                <div class="infoContainer2">
-                    <div class="title">
-                        <h3>Tecnologias</h3>
+            <div class="section2Container" id="animateJS">
+                <div class="animeJSCarrusel" id="animateCarrusel">
+                    <div class="sectionGrid">
+                        <div class="infoContainer2">
+                            <div class="title blanco">
+                                <h3 class="titleSize">Tecnologias</h3>
+                            </div>
+                            <div>
+                                <div id="arduinoTitle">
+                                    <h4 class="item">Arduino Mega 2560</h4>
+                                </div>
+                                <div class="parrafo">
+                                    <p>E-Chair cuenta con un Arduino Mega 2560 como microprocesador central</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carrusel" id="carruselTecnologias">
+                            <div><img src="/media/ArduinoMega2560.jpg" class="imgCarrusel" alt="2"/></div>
+                        </div>
                     </div>
-                    <ul class="lista">
-                        <li class="item">Arduino</li>
-                        <li class="item">HTML CSS JS C++</li>
-                        <li class="item">IGBTs</li>
-                    </ul>
-                </div>
-                <div class="carrusel" id="carruselTecnologias">
-                    <div><img src="media/icons/js.png" class="imgCarrusel" alt="1"/></div>
-                    <div><img src="media/icons/c-.png" class="imgCarrusel" alt="2"/></div>
+                    <div class="sectionGrid">
+                        <div class="infoContainer2">
+                            <div>
+                                <h4 class="item">Esp32</h4>
+                            </div>
+                            <p>E-Chair cuenta con un Arduino Mega 2560 como microprocesador central</p>
+                        </div>
+                        <div class="carrusel" id="carruselTecnologias">
+                            <div><img src="media/icons/c-.png" class="imgCarrusel" alt="2"/></div>
+                        </div>
+                    </div>
+                    <div class="sectionGrid">
+                        <div class="infoContainer2">
+                            <div>
+                                <h4 class="item">Pagina Web</h4>
+                            </div>
+                            <p>E-Chair cuenta con un Arduino Mega 2560 como microprocesador central</p>
+                        </div>
+                        <div class="carrusel" id="carruselTecnologias">
+                            <div><img src="media/icons/c-.png" class="imgCarrusel" alt="2"/></div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div>
-                <a class="btnDown" href="#seccion2"><img class="scrollBtn" src="media/icons/dot-arrow-down.png" class="downArrow" alt="Bajar"></a>
+                <a class="btnDown" href="#seccion2" id="Seccion2Scroll"><img class="scrollBtn" src="media/icons/dot-arrow-down.png" class="downArrow" alt="Bajar"></a>
             </div>
         </section>
         <section class="sectionBack3">
@@ -204,6 +226,10 @@
     <!--AOS-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init({duration: 1000});</script>
+
+    <!--Animate.js-->
+    <script src="https://unpkg.com/animejs"></script>
+    <script src="https://unpkg.com/revealfx@latest/src/revealFx.js"></script>
 
     <!--JS-->
     <script src="js/main.js"></script>

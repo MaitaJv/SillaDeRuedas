@@ -43,6 +43,9 @@ let resenas = [
   }
 ]
 let resenasContainer = document.querySelector("#carruselResenasContainer")
+let flechaSeccion2 = document.querySelector("#Seccion2Scroll")
+let animate = document.querySelector("#animateJS")
+let arduinoTitle = document.querySelector("#arduinoTitle")
 let resena = document.createElement("div")
 
 resena.setAttribute("id","carruselResenas")
@@ -120,3 +123,67 @@ $('#carruselResenas').slick({
   autoplay: true,
   autoplaySpeed: 5000
 });
+
+$(document).ready(function(){
+  $('#animateCarrusel').slick({
+    arrows: false,
+    infinite: true,
+    centerMode: true,
+    centerPadding: '0px',
+    slidesToShow: 1,
+    slidesToScroll: 1
+  });
+});
+
+let completado = false
+
+let revealSettings = {
+  bgColors: ['black', 'black','black', 'black','black', 'black','black', 'black'],
+  duration: 600,
+  delay: 100,
+  direction: 'lr',
+  onStart: function (contentEl, revealerEl) {
+  },
+  onHalfway: function (contentEl, revealerEl) {
+      contentEl.style.opacity = 1;
+  },
+  onComplete: function () {
+      completado = true
+      console.log(completado);
+      mostrarArduino()
+  }
+};
+
+let revealerEffect = new RevealFx(animate, {
+  layers: 8,
+  isContentHidden:true,
+  revealSettings: revealSettings
+});
+
+let arduinoTitleConfig = {
+  bgColors: ['white'],
+  duration: 600,
+  delay: 100,
+  direction: 'lr',
+  onStart: function (contentEl, revealerEl) {
+  },
+  onHalfway: function (contentEl, revealerEl) {
+      contentEl.style.opacity = 1;
+  }
+};
+
+let arduinoTitleReveal = new RevealFx(arduinoTitle, {
+  layers: 1,
+  isContentHidden:true,
+  revealSettings: arduinoTitleConfig
+});
+
+flechaSeccion2.addEventListener("click", ()=>{
+  completado = false
+  revealerEffect.reveal(revealSettings)
+})
+
+const mostrarArduino = ()=>{
+  arduinoTitleReveal.reveal(arduinoTitleConfig)
+  console.log("arduinoTitle");
+}
