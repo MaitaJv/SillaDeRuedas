@@ -42,48 +42,8 @@ let resenas = [
     foto: "user.png"
   }
 ]
-let resenasContainer = document.querySelector("#carruselResenasContainer")
 let flechaSeccion2 = document.querySelector("#Seccion2Scroll")
 let animate = document.querySelector("#animateJS")
-let arduinoTitle = document.querySelector("#arduinoTitle")
-let resena = document.createElement("div")
-
-resena.setAttribute("id","carruselResenas")
-
-resenas.forEach( element => {
-  const {
-    nombre: name,
-    id: id,
-    calificacion: calif,
-    review: rev,
-    foto: foto
-  } = element
-
-  resena.innerHTML +=`
-  <div>
-    <div class="cardContainer" >
-      <div class="card">
-        <div class="card-title">
-          <img src="media/icons/${foto}" class="userImg" alt="user">
-          <h5 class="userName">${name}</h5>
-        </div>
-        <div class="card-info">
-          <div class="calificacion">
-            <h5>${calif}</h5>
-            <img src="media/icons/star.png" height="15px" alt="estrellas">
-          </div>
-          <p class="review">${rev}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-                        
-`
-
-resenasContainer.appendChild(resena);
-})
-
-
 
 $(document).ready(function(){
   $('#carruselTecnologias').slick({
@@ -96,34 +56,6 @@ $(document).ready(function(){
   });
 });
 
-$('#carruselResenas').slick({
-  centerMode: true,
-  centerPadding: '0px',
-  slidesToShow: 3,
-  responsive: [
-    {
-      breakpoint: 949,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '30px',
-        slidesToShow: 1
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }
-  ],
-  autoplay: true,
-  autoplaySpeed: 5000
-});
-
 $(document).ready(function(){
   $('#animateCarrusel').slick({
     arrows: false,
@@ -131,7 +63,9 @@ $(document).ready(function(){
     centerMode: true,
     centerPadding: '0px',
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000
   });
 });
 
@@ -155,35 +89,12 @@ let revealSettings = {
 };
 
 let revealerEffect = new RevealFx(animate, {
-  layers: 8,
+  layers: 4,
   isContentHidden:true,
   revealSettings: revealSettings
-});
-
-let arduinoTitleConfig = {
-  bgColors: ['white'],
-  duration: 600,
-  delay: 100,
-  direction: 'lr',
-  onStart: function (contentEl, revealerEl) {
-  },
-  onHalfway: function (contentEl, revealerEl) {
-      contentEl.style.opacity = 1;
-  }
-};
-
-let arduinoTitleReveal = new RevealFx(arduinoTitle, {
-  layers: 1,
-  isContentHidden:true,
-  revealSettings: arduinoTitleConfig
 });
 
 flechaSeccion2.addEventListener("click", ()=>{
   completado = false
   revealerEffect.reveal(revealSettings)
 })
-
-const mostrarArduino = ()=>{
-  arduinoTitleReveal.reveal(arduinoTitleConfig)
-  console.log("arduinoTitle");
-}
