@@ -95,14 +95,17 @@ html{
 
 .sectionBack1{
     height: 100vh;
-    background: url(../media/fondoPrueba.jpg);
+    background: white;
     background-repeat: no-repeat;
     background-size: contain;
 }
 
+.imagenizquierda1{
+    height: 100vh;
+}
+
 .section1Container{
     height: 100vh;
-    padding: 10%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
@@ -452,7 +455,7 @@ html{
 
 .sectionBack4{
     height: 100vh;
-    background: url(../media/fondo5.svg);
+    background: url(../media/Fondo-oscuro.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -673,6 +676,13 @@ html{
 }
 
 @media (min-width:950px) and (max-width:1300px) {
+    .navBar{
+        justify-content: space-between;
+    }
+
+    .links{
+        width: 35rem;
+    }
     .sillaImg{
         height: 200px;
         margin: auto 0;
@@ -723,8 +733,12 @@ html{
 
 @media (min-width:451px) and (max-width:949px) {
 
+    .imagenizquierda1{
+        height: 100vh;
+    }
+
     .infoContainer{
-        grid-column: 1/4;
+        width: 25rem;
     }
 
     .imgContainer{
