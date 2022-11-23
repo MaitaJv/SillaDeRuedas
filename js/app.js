@@ -161,7 +161,7 @@ const WithChairs = (Chairs) =>{
                                             </div>
 
                                             <div>
-                                                <a href="https://${ip}" class="ChairLink" id="ChairLink">Manejar Silla</a>
+                                                <a href="http://${ip}" class="ChairLink" id="ChairLink">Manejar Silla</a>
                                             </div>
                                         </div>
         `
